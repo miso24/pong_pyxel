@@ -38,7 +38,7 @@ class Ball:
         pyxel.pset(self.pos.x, self.pos.y, 7)
 
     def is_reach_left(self) -> bool:
-        return self.pos.x <= FIELD_LEFT
+        return self.pos.x < FIELD_LEFT
 
     def is_reach_right(self) -> bool:
         return self.pos.x >= FIELD_RIGHT

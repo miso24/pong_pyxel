@@ -82,6 +82,7 @@ class Game:
         if not self.ball.is_reach_edge():
             return
         self.ball.stop()
+        self.ball.pos = Vector2i(-1, -1)
         pyxel.play(1, 1)
         if self.ball.is_reach_left():
             self.points["RIGHT"] += 1
